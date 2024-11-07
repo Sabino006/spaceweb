@@ -1,0 +1,4054 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    color: white;
+    background-image: url(../img/background/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+#background {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    border-bottom: solid 2px black;
+    box-shadow: 0px 0px 10px aqua;
+}
+
+#navbar .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+#navbar .nav .logo {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+#navbar .nav .logo img {
+    width: 80px;
+    height: 80px;
+}
+
+#navbar .nav .logo-space {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-family: "Archivo black", sans-serif;
+    letter-spacing: 2px;
+}
+
+#navbar .nav .logo-tech {
+    text-transform: uppercase;
+    color: aqua;
+    font-family: "Archivo black", sans-serif;
+    font-size: 30px;
+    margin-right: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#navbar .nav .links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 0 0;
+}
+
+#navbar .nav .links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    height: 100%;
+    align-content: center;
+    padding: 0 20px;
+    border-bottom: solid 2px black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition-duration: 0.4s;
+    font-size: 15px;
+}
+
+#navbar .nav .links a:hover {
+    border-bottom: solid 2px white;
+}
+
+#navbar .nav .links .active {
+    color: aqua;
+    border-bottom: solid 2px aqua;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#navbar .nav .links .active:hover {
+    border-bottom: solid 2px aqua;
+}
+
+/* DADOS DO CADASTRO */
+
+#background .content {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px aqua;
+    width: 100%;
+    height: 100%;
+    min-height: 100;
+    max-width:  1200px;
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .content .content-int {
+    width: 80%;
+    height: 100%;
+}
+
+#background .content .content-int .basic-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .titulo-perfil {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+#background .content .content-int .basic-info .info-perfil {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+#background .content .content-int .basic-info .titulo-perfil h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-1 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-1 .links a {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-1 .links a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-1 i {
+    font-size: 180px;
+    color: black;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil .hr-horizontal {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    width: 5px;
+    min-height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .nome {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .nome label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .nome input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .usuario {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .usuario label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .usuario input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .email {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .email label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .email input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .telefone {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .telefone label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .telefone input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .cpf {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .cpf label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .cpf input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .acesso {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .acesso label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .acesso input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .notificacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+#background .content .content-int .basic-info .info-perfil .info-int-2 .notificacao p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+}
+
+/* FIM DOS DADOS DE CADASTRO */
+/* ATUALIZAR DADOS DO CADASTRO */
+
+#background .content .content-int .basic-info .info-perfil-atualizar {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+#background .content .content-int .basic-info .titulo-perfil-atualizar h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-1 i {
+    font-size: 180px;
+    color: black;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .hr-horizontal {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    width: 5px;
+    min-height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-nome {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-nome label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-nome input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-id {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-id label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-id input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    pointer-events: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-sobrenome {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-sobrenome label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-sobrenome input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-password {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-password label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-password input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-usuario {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-usuario label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 20%;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-usuario input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    outline: none;
+    pointer-events: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-email {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-email label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-email input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-telefone {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-telefone label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-telefone input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-cpf {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-cpf label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-cpf input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-acesso {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-acesso label {
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-acesso input {
+    background-color: transparent;
+    pointer-events: none;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .notificacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .notificacao p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .links {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .links a {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .links a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .links button {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .links button:hover {
+    background-color: black;
+    color: aqua;
+}
+
+/* FIM DOS DADOS DE CADASTRO ATUALIZADOS */
+/* CADASTRAR USUARIO */
+
+#background .content .content-int .basic-info .info-perfil-cadastrar {
+    width: 100%;
+    display: flex;
+    gap: 80px;
+}
+
+#background .content .content-int .basic-info .titulo-perfil-cadastrar h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-1 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-1 i {
+    font-size: 180px;
+    color: black;
+    text-shadow: 0px 0px 10px aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .hr-horizontal {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    width: 5px;
+    min-height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-nome {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-nome label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-nome input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-usuario {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-usuario label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-usuario input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-email {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-email label {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-email input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-senha {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-senha label {
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-senha input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-telefone {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-telefone label {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-telefone input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-cpf {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-cpf label {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-cpf input {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-acesso {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-acesso label {
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-acesso select {
+    background-color: transparent;
+    border: solid 2px aqua;
+    color: aqua;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cadastrar-acesso select option {
+    color: aqua;
+    background-color: black;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .notificacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .notificacao p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gray;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .links {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .links a {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .links a:hover {
+    background-color: black;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .links button {
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .links button:hover {
+    background-color: black;
+    color: aqua;
+}
+
+/* FIM DO CADASTRO DE USUARIO */
+
+/* CRIAR PEDIDOS */
+#background .content .content-int .basic-info .info-pedido {
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-pedido form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 80px;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .titulo-vendedor {
+    text-transform: uppercase;
+    color: aqua;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .titulo-pedido {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .titulo-pedido h1 {
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .codigo label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .codigo input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px 10px;
+    outline: none;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: aqua;
+    font-weight: 600;
+    text-align: center;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .nome {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .nome label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .nome input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px 10px;
+    outline: none;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: aqua;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .cpf {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .cpf label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+#background .content .content-int .basic-info .info-pedido .vendedor .cpf input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px 10px;
+    outline: none;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: aqua;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#background .content .content-int .basic-info .info-pedido .hr-horizontal {
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    width: 5px;
+    min-height: 100%;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido {
+    width: 50%;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .titulo-pedido {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .titulo-pedido h2 {
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .codigo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .codigo input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .codigo label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .nome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .nome input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .nome label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .email label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .email input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .cpf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .cpf label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .cpf input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .status label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .status select {
+    width: 100%;
+    background-color: transparent;
+    border: solid 2px aqua;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: 600;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .status select option {
+    background-color: black;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .status input {
+    width: 95%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 70px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .pedido label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .pedido input {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    text-transform: uppercase;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 160px;
+    gap: 5px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .descricao label {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: aqua;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .descricao textarea {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    outline: none;
+    resize: none;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .descricao textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    gap: 20px;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .links button {
+    font-size: 15px;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .links button:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .links a {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+
+}
+
+#background .content .content-int .basic-info .info-pedido .pedido .links a:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+/* FIM CRIAR PEDIDO */
+
+/* CHAMADOS */
+
+#background .content .content-int .basic-info .info-chamado {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#background .content .content-int .basic-info .info-chamado form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#background .content .content-int .basic-info .info-chamado .line {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .codigo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .codigo label {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: aqua;
+    font-weight: 600;
+    width: 86%;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .codigo input {
+    background-color: transparent;
+    background-color: gray;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(24, 24, 24);
+    padding: 5px 10px;
+    outline: none;
+    pointer-events: none;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .usuario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .usuario label {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: aqua;
+    font-weight: 600;
+    width: 86%;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .usuario input {
+    background-color: gray;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(24, 24, 24);
+    padding: 5px 10px;
+    outline: none;
+    pointer-events: none;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .nivel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .nivel label {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: aqua;
+    font-weight: 600;
+    width: 86%;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .nivel select {
+    background-color: transparent;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    width: 85%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    padding: 5px 10px;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .nivel select option {
+    background-color: black;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .tipo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .tipo label {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: aqua;
+    font-weight: 600;
+    width: 86%;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .tipo select {
+    background-color: transparent;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    width: 85%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    padding: 5px 10px;
+    outline: none;
+}
+
+#background .content .content-int .basic-info .info-chamado .line .tipo select option {
+    background-color: black;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-desc {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-desc label {
+    width: 100%;
+    color: aqua;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-desc textarea {
+    width: 97%;
+    height: 120px;
+    border-radius: 10px;
+    background-color: black;
+    border: solid 2px aqua;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    resize: none;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-desc textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-links {
+    width: 85%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-links button {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-links button:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-links a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .basic-info .info-chamado .line-links a:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+/* FIM CHAMADOS */
+/* INICIO PAGINA EQUIPE */
+
+#background .content-equipe {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px aqua;
+    width: 100%;
+    height: 100%;
+    min-height: 100;
+    max-width:  1200px;
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .content-equipe .links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#background .content-equipe .links .line {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+}
+
+#background .content-equipe .links .line a {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: solid 2px transparent;
+    box-shadow: 0px 0px 5px aqua;
+    border-radius: 10px;
+    min-height: 160px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    gap: 10px;
+}
+
+#background .content-equipe .links .line a:hover {
+    border: solid 2px aqua;
+}
+
+#background .content-equipe .links .line a p {
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#background .content-equipe .links .line a i {
+    font-size: 80px;
+    transition-duration: 0.4s;
+    color: white;
+    font-weight: 600;
+}
+
+/* FIM PAGINA EQUIPE */
+
+/* TABELA CHAMADOS */
+
+#background .chamados {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 100;
+    max-width:  1200px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .chamados table {
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    border: solid 2px aqua;
+    box-shadow: 0px 0px 10px aqua;
+    text-align: center;
+    padding: 4px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#background .chamados table tr {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#background .chamados table .topo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(77, 77, 77);
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#background .chamados table .conteudo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 12px;
+    color: white;
+}
+
+#background .chamados table .conteudo td a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* FIM CHAMADOS  */
+
+/* ALTERAR CHAMADOS */
+
+#background .content .content-int .chamados_alterar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#background .content .content-int .chamados_alterar .chamado_titulo {
+    text-transform: uppercase;
+    color: aqua;
+}
+
+#background .content .content-int .chamados_alterar form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#background .content .content-int .chamados_alterar form .codigo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .codigo label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .codigo input {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    pointer-events: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .usuario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .usuario label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .usuario input {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    pointer-events: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .tipo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .tipo label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .tipo input {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    pointer-events: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .descricao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .descricao label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .descricao textarea {
+    width: 90%;
+    height: 110px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: white;
+    background-color: transparent;
+    border: solid 2px aqua;
+    outline: none;
+    margin: auto;
+    resize: none;
+}
+
+#background .content .content-int .chamados_alterar form.descricao textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+#background .content .content-int .chamados_alterar form .nivel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .nivel label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .nivel input {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    pointer-events: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .status {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+#background .content .content-int .chamados_alterar form .status label {
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+
+#background .content .content-int .chamados_alterar form .status select {
+    padding: 5px 10px;
+    width: 94%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .status input {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    border: solid 2px aqua;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    pointer-events: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .content-int .chamados_alterar form .status select option {
+    background-color: black;
+}
+
+#background .content .content-int .chamados_alterar form .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    gap: 20px;
+}
+
+#background .content .content-int .chamados_alterar form .links button {
+    font-size: 15px;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+#background .content .content-int .chamados_alterar form .links button:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+#background .content .content-int .chamados_alterar form .links a {
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    width: 140px;
+    text-transform: uppercase;
+    color: black;
+    background-color: aqua;
+    border: solid 2px aqua;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.4s;
+
+}
+
+#background .content .content-int .chamados_alterar form .links a:hover {
+    background-color: transparent;
+    color: aqua;
+    cursor: pointer;
+}
+
+/* FIM ALTERAR CHAMADOS */
+
+/* TABELA PEDIDOS */
+
+#background .pedidos {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 100;
+    max-width:  1200px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .pedidos table {
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    border: solid 2px aqua;
+    box-shadow: 0px 0px 10px aqua;
+    text-align: center;
+    padding: 4px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#background .pedidos table tr {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#background .pedidos table .topo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(77, 77, 77);
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#background .pedidos table .conteudo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 12px;
+    color: white;
+}
+
+#background .pedidos table .conteudo td a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* FIM PEDIDOS  */
+/* TABELA USUARIOS */
+
+#background .usuarios {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    max-width:  1200px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .usuarios table {
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    border: solid 2px aqua;
+    box-shadow: 0px 0px 10px aqua;
+    text-align: center;
+    padding: 4px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#background .usuarios table tr {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#background .usuarios table .topo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(77, 77, 77);
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#background .usuarios table .conteudo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 12px;
+    color: white;
+}
+
+#background .usuarios table .conteudo td a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* FIM USUARIOS  */
+
+/* CRIAR ATENDIMENTO */
+
+#background .content .criar_atendimento {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+}
+
+#background .content .criar_atendimento form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#background .content .criar_atendimento form .titulo {
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .codigo label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .codigo input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .criar_atendimento form .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .nome label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .nome input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .criar_atendimento form .cpf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .cpf label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .cpf input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .criar_atendimento form .email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .email label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .email input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .criar_atendimento form .telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .telefone label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .telefone input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .criar_atendimento form .servico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .criar_atendimento form .servico label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .servico select {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#background .content .criar_atendimento form .servico select option {
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .criar_atendimento form .links {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background .content .criar_atendimento form .links button {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 8px 10px;
+    width: 50%;
+    min-width: 240px;
+    max-width: 260px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#background .content .criar_atendimento form .links button:hover {
+    background-color: transparent;
+    color: aqua;
+
+}
+
+/* FIM CRIAR ATENDIMENTO */
+
+/* ALTERAR ATENDIMENTO */
+
+#background .content .alterar_atendimento {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+#background .content .alterar_atendimento form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .titulo {
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .codigo label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .codigo input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .nome label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_vendedor .nome input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .titulo {
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .codigo label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .codigo input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .nome label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .nome input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .cpf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .cpf label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .cpf input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .email label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .email input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .telefone label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .telefone input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .servico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .servico label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .servico input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .status {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .status label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .status select {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .status select option {
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .links {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .links button {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .links button:hover {
+    background-color: transparent;
+    color: aqua;
+
+}
+
+#background .content .alterar_atendimento form .dados_atendimento .links a {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* FIM ALTERAR ATENDIMENTO */
+
+/* VIEW ATENDIMENTO */
+
+#background .content .view_atendimento {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+#background .content .view_atendimento form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#background .content .view_atendimento form .dados_vendedor {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#background .content .view_atendimento form .dados_vendedor .titulo {
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_vendedor .codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_vendedor .codigo label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_vendedor .codigo input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_vendedor .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_vendedor .nome label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_vendedor .nome input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#background .content .view_atendimento form .dados_atendimento .titulo {
+    color: aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .codigo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .codigo label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: aqua;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .codigo input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .nome label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .nome input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento .cpf {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .cpf label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .cpf input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento .email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .email label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .email input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento .telefone {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .telefone label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .telefone input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#background .content .view_atendimento form .dados_atendimento .servico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .servico label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .servico input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#background .content .view_atendimento form .dados_atendimento .status {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+#background .content .view_atendimento form .dados_atendimento .status label {
+    color: aqua;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#background .content .view_atendimento form .dados_atendimento .status input {
+    outline: none;
+    border: solid 2px aqua;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#background .content .view_atendimento form .dados_atendimento .links {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#background .content .view_atendimento form .dados_atendimento .links a {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    border: solid 2px aqua;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 8px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* FIM VIEW ATENDIMENTO */
+
+/* TABELA ATENDIMENTOS */
+
+#background .atendimentos {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 100;
+    max-width:  1200px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+#background .atendimentos table {
+    background: rgb(33,33,33);
+    background: linear-gradient(110deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    border: solid 2px aqua;
+    box-shadow: 0px 0px 10px aqua;
+    text-align: center;
+    padding: 4px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+#background .atendimentos table tr {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#background .atendimentos table .topo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(77, 77, 77);
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+#background .atendimentos table .conteudo td {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: 12px;
+    color: white;
+}
+
+#background .atendimentos table .conteudo td a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* FIM ATENDIMENTOS  */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    box-shadow: 0px 0px 10px aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+footer .footer span .footer-space {
+    font-family: "Archivo black", sans-serif;
+    letter-spacing: 2px;
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+footer .footer span .footer-tech {
+    font-family: "Archivo black", sans-serif;
+    color: aqua;
+    letter-spacing: 2px;
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1280px) {
+    #background .content {
+        margin-top: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    #background .content {
+        padding: 20px 0;
+    }
+
+    #background .content-equipe {
+        margin-top: 160px;
+        margin-bottom: 110px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #background .content .content-int .basic-info .info-perfil{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-1 i {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .hr-horizontal {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 {
+        gap: 20px;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .nome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .usuario {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .email {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .telefone {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .cpf {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .acesso {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .nome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .nome label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .usuario label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .email label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .cpf label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .telefone label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil .info-int-2 .acesso label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-1 i {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .hr-horizontal {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2  form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-id {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-nome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-sobrenome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-usuario {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-email {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-telefone {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-cpf {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-acesso {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-password {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-id label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-nome label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-sobrenome label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-usuario label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-email label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-cpf label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-telefone label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-acesso label {
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 .atualizar-password label {
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-1 i {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .hr-horizontal {
+        display: none;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 {
+        gap: 20px;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .nome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .usuario {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .email {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .telefone {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cpf {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .acesso {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .nome {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .nome label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .usuario label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .email label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .cpf label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-cadastrar .info-int-2 .telefone label {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-perfil-c .info-int-2 .acesso label {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 740px) {
+    #navbar {
+        height: 120px;
+    }
+
+    #navbar .nav {
+        flex-direction: column;
+    }
+
+    #navbar .nav .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar .nav .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+    }
+
+    #background .content .alterar_atendimento form {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #background .content .alterar_atendimento form .dados_vendedor {
+        width: 100%;
+    }
+
+    #background .content .alterar_atendimento form .dados_atendimento {
+        width: 100%;
+        align-items: center;
+    }
+    
+    #background .content .view_atendimento form {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #background .content .view_atendimento form .dados_vendedor {
+        width: 100%;
+    }
+
+    #background .content .view_atendimento form .dados_atendimento {
+        width: 100%;
+        align-items: center;
+    }
+
+    #background .content .content-int .basic-info .info-pedido form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #background .content .content-int .basic-info .info-pedido form .vendedor {
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-pedido form .pedido {
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .info-pedid form .hr-horizontal {
+        display: none;
+    }
+
+    #background .content {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 160px;
+    }
+
+    #background .content .content-int .basic-info .info-perfil .info-int-2 {
+        width: 100%;;
+    }
+
+    #background .content-equipe .links .line {
+        flex-direction: column;
+    }
+
+    #background .content-equipe .links .line a {
+        width: 100%;
+    }
+
+    #background .content .content-int .basic-info .titulo-perfil h1 {
+        font-size: 18px;
+    }
+
+    #background .content .content-int .basic-info .info-perfil-atualizar .info-int-2 {
+        width: 100%;;
+    }
+
+    #background .usuarios table .topo td {
+        font-size: 11px;
+    }
+    #background .usuarios table .conteudo td {
+        font-size: 9px;
+    }
+    #background .usuarios table .conteudo td a {
+        font-size: 10px;
+    }
+    
+    #background .chamados table .topo td {
+        font-size: 11px;
+    }
+    #background .chamados table .conteudo td {
+        font-size: 9px;
+    }
+    #background .chamados table .conteudo td a {
+        font-size: 10px;
+    }
+    
+    #background .pedidos table .topo td {
+        font-size: 11px;
+    }
+    #background .pedidos table .conteudo td {
+        font-size: 9px;
+    }
+    #background .pedidos table .conteudo td a {
+        font-size: 10px;
+    }
+    
+    #background .atendimentos table .topo td {
+        font-size: 11px;
+    }
+    #background .atendimentos table .conteudo td {
+        font-size: 9px;
+    }
+    #background .atendimentos table .conteudo td a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 530px) {
+    #background .usuarios {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .usuarios table {
+        max-width: 450px;
+    }
+
+    #background .usuarios table .topo td {
+        font-size: 9px;
+    }
+    #background .usuarios table .conteudo td {
+        font-size: 7px;
+    }
+    #background .usuarios table .conteudo td a {
+        font-size: 9px;
+    }
+    
+    #background .chamados {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .chamados table {
+        max-width: 450px;
+    }
+
+    #background .chamados table .topo td {
+        font-size: 9px;
+    }
+    #background .chamados table .conteudo td {
+        font-size: 7px;
+    }
+    #background .chamados table .conteudo td a {
+        font-size: 9px;
+    }
+    
+    #background .pedidos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .pedidos table {
+        max-width: 450px;
+    }
+
+    #background .pedidos table .topo td {
+        font-size: 9px;
+    }
+    #background .pedidos table .conteudo td {
+        font-size: 7px;
+    }
+    #background .pedidos table .conteudo td a {
+        font-size: 9px;
+    }
+    
+    #background .atendimentos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .atendimentos table {
+        max-width: 450px;
+    }
+
+    #background .atendimentos table .topo td {
+        font-size: 9px;
+    }
+    #background .atendimentos table .conteudo td {
+        font-size: 7px;
+    }
+    #background .atendimentos table .conteudo td a {
+        font-size: 9px;
+    }
+
+    #background .content .content-int .basic-info .info-chamado form .line {
+        flex-direction: column;
+    }
+
+
+    #background .content .content-int .basic-info .info-chamado form .line .usuario {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-chamado form .line .tipo {
+        width: 100%;
+    }
+    
+    #background .content .content-int .basic-info .info-chamado form .line .nivel {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    #navbar .nav .links a{
+        font-size: 14px;
+    }
+
+    #background .usuarios {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .usuarios table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .usuarios table .topo td {
+        font-size: 4px;
+    }
+    #background .usuarios table .conteudo td {
+        font-size: 4px;
+    }
+    #background .usuarios table .conteudo td a {
+        font-size: 6px;
+    }
+    
+    #background .chamados {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .chamados table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .chamados table .topo td {
+        font-size: 4px;
+    }
+    #background .chamados table .conteudo td {
+        font-size: 4px;
+    }
+    #background .chamados table .conteudo td a {
+        font-size: 6px;
+    }
+    
+    #background .pedidos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .pedidos table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .pedidos table .topo td {
+        font-size: 4px;
+    }
+    #background .pedidos table .conteudo td {
+        font-size: 4px;
+    }
+    #background .pedidos table .conteudo td a {
+        font-size: 6px;
+    }
+
+    #background .content .content-int .chamados_alterar .chamado_titulo {
+        margin-bottom: 10px;
+    }
+    
+    #background .content .content-int .chamados_alterar .chamado_titulo h1 {
+        font-size: 15px;
+    }
+    
+    #background .atendimentos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .atendimentos table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .atendimentos table .topo td {
+        font-size: 4px;
+    }
+    #background .atendimentos table .conteudo td {
+        font-size: 4px;
+    }
+    #background .atendimentos table .conteudo td a {
+        font-size: 6px;
+    }
+
+    #background .content .content-int .chamados_alterar .chamado_titulo {
+        margin-bottom: 10px;
+    }
+    
+    #background .content .content-int .chamados_alterar .chamado_titulo h1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    #navbar .nav .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #navbar .nav .logo-space {
+        font-size: 20px;
+    }
+
+    #navbar .nav .logo-tech {
+        font-size: 20px;
+    }
+
+    #navbar .nav .links a {
+        font-size: 11px;
+    }
+
+    footer .footer span {
+        font-size: 9px;
+    }
+
+    footer .footer span .footer-space {
+        font-size: 9px;
+    }
+    
+    footer .footer span .footer-tech {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 320px) {
+    #background .usuarios {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .usuarios table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .usuarios table .topo td {
+        font-size: 4px;
+    }
+    #background .usuarios table .conteudo td {
+        font-size: 4px;
+    }
+    #background .usuarios table .conteudo td a {
+        font-size: 6px;
+    }
+    
+    #background .chamados {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .chamados table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .chamados table .topo td {
+        font-size: 4px;
+    }
+    #background .chamados table .conteudo td {
+        font-size: 4px;
+    }
+    #background .chamados table .conteudo td a {
+        font-size: 6px;
+    }
+    
+    #background .pedidos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .pedidos table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .pedidos table .topo td {
+        font-size: 4px;
+    }
+    #background .pedidos table .conteudo td {
+        font-size: 4px;
+    }
+    #background .pedidos table .conteudo td a {
+        font-size: 6px;
+    }
+    
+    #background .atendimentos {
+        margin: 0;
+        padding: 0;
+    }
+
+    #background .atendimentos table {
+        max-width: 310px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #background .atendimentos table .topo td {
+        font-size: 4px;
+    }
+    #background .atendimentos table .conteudo td {
+        font-size: 4px;
+    }
+    #background .atendimentos table .conteudo td a {
+        font-size: 6px;
+    }
+}
+
